@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+<mapper namespace="mapper.order">
+	<resultMap type="orderVO" id="orderResult">
+		<result property="orderno" column="order_no" />
+		<result property="orderdate" column="orderdate" />
+		<result property="order_group_no" column="order_group_no" />
+		<result property="id" column="id" />
+		<result property="prodcode" column="prodcode" />
+		<result property="prodname" column="prodname" />
+		<result property="quantity" column="order_quan" />
+	</resultMap>
+	
+	
+	<insert id="order" parameterType="orderVO" >
+		<![CDATA[
+			insert into CAMPORDER (ORDER_GROUP_NO, ORDER_QUAN, ID, ORDERDATE,PROCODE, PRODNAME) 
+			values ( 
+				#{order_group_no},
+				#{quantity},
+				#{id},
+				SYSDATE 
+				#{prodcode},
+				#{prodname})
+		]]>
+	</insert>
+	
+	<select id="order_group_no" resultType="long" >
+		<![CDATA[
+			select order_group_no_seq.nextval from dual
+		]]>
+	</select>	
+
+</mapper> 
