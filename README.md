@@ -1,6 +1,4 @@
-# Semi_Project_2021-03
-
-### 불멍 - 캠핑 전문 쇼핑몰
+### [불멍 - 캠핑 전문 쇼핑몰](https://www.youtube.com/watch?v=B9JPBN6o4SE)
 
 > 캠핑을 시작하고 싶어하는 사람들을 위한 캠핑 용품 쇼핑몰을 제작
 
