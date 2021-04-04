@@ -5,10 +5,16 @@ $(document).ready(function(){
 	});
 	
 	$("#comm").click(function(){
-		$("#list").hide();
-		$(".mainContent").html("<h1>커뮤니티 공간 개설 준비 중 입니다.</h1>");
-        
+		var logined=$.cookie("logined");
+		if (logined) {
+			$("#list").hide();	
+			$(".mainContent").load("/board/board.camp");
+		} else {
+			alert ("로그인 후 커뮤니티 사용이 가능합니다.")
+		}
+			
 	});
+
 });
 
 $(document).on("click", "#cart", function(event) { // 장바구니

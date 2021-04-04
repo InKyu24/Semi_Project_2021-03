@@ -44,7 +44,7 @@ body { padding-top: 80px; } #id, #pw {width: 150px;}
             <a class="nav-link" href="#" id="about">About</a>
           </li>
           <li class="nav-item">
-          	<a class="nav-link" href="#" id="comm">Community</a>
+          	<a class="nav-link" id="comm">Community</a>
           </li>
           <li class="nav-item" id="cartLi">       
           </li>
