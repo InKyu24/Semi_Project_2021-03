@@ -20,4 +20,11 @@ public class BoardControllerImpl implements BoardController{
 		
 		return "board/listArticles";
 	}
+	
+	@Override
+	@RequestMapping (value = "/write.camp", method= {RequestMethod.GET, RequestMethod.POST})
+	public String write (){
+		return "board/articleForm";
+	}
+
 }
