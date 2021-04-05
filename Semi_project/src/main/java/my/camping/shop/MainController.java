@@ -14,4 +14,10 @@ public class MainController {
 	public String home() {
 		return "index";
 	}
+	
+	@RequestMapping (value = "/introduction.camp", method= {RequestMethod.GET, RequestMethod.POST})
+	public String write (){
+		return "introduction/introduction";
+	}
+
 }
