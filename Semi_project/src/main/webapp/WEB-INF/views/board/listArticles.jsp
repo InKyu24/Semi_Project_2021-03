@@ -44,10 +44,10 @@
 	              <span style="padding-left:20px"></span>    
 	         </c:forEach>
 	         <span style="font-size:12px;">[답변]</span>
-                   <a class='cls1' href="${contextPath}/board/viewArticle.do?articleNO=${article.articleNO}">${article.title}</a>
+                   <a class='cls1' href="${contextPath}/board/viewArticle.camp?articleNO=${article.articleNO}">${article.title}</a>
 	          </c:when>
 	          <c:otherwise>
-	            <a class='cls1' href="${contextPath}/board/viewArticle.do?articleNO=${article.articleNO}">${article.title }</a>
+	            <a class='cls1' href="${contextPath}/board/viewArticle.camp?articleNO=${article.articleNO}">${article.title }</a>
 	          </c:otherwise>
 	        </c:choose>
 	  </td>
